@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #2e3d49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #2e3d49 !important;
+    cursor: default;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: #2e3d49;
+    border-radius: 10px;
+    padding: 10px;
+}
+card.hidden {
+    background-color: #2e3d49;
+    border: none;
+}
